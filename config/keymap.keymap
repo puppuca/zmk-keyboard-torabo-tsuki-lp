@@ -6,6 +6,13 @@
 
 #if defined(TORABO_TSUKI_LP_INPUT_HIRES_DIAL)
 #include <behaviors/hires_dial.dtsi>
+/ {
+    sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&hires_dial>;
+        triggers-per-rotation = <20>;
+    };
+};
 #endif
 
 / {
@@ -32,12 +39,6 @@
             bindings = <&kp ESC>;
             key-positions = <13 14>;
         };
-    };
-
-    sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&hires_dial>;
-        triggers-per-rotation = <20>;
     };
 
     keymap {
