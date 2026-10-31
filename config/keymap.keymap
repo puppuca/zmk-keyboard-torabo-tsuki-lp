@@ -54,11 +54,11 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans                    &trans    &trans      &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans                    &trans    &trans      &mkp MCLK  &trans     &trans  &trans
-&trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans  &trans  &trans    &trans    &mkp LCLK   &trans     &mkp RCLK  &kp PG  &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans    &trans    &trans      &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans  &mkp MB4  &mkp MB5  &trans      &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans                    &trans    &trans      &trans     &trans     &trans         &trans
+&trans  &trans  &trans  &trans     &trans     &trans                    &trans    &trans      &mkp MCLK  &trans     &trans         &trans
+&trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans  &trans  &trans    &trans    &mkp LCLK   &trans     &mkp RCLK  &kp PG_UP      &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans    &trans    &trans      &trans     &trans     &kp PAGE_DOWN  &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans  &mkp MB4  &mkp MB5  &trans      &trans     &trans     &trans         &trans
 #if defined(TORABO_TSUKI_LP_KSCAN_4_DIRECTION_SWITCH)
 &msc SCRL_UP &msc SCRL_DOWN &msc SCRL_LEFT &msc SCRL_RIGHT &mkp MCLK
 #elif defined(TORABO_TSUKI_LP_INPUT_HIRES_DIAL)
