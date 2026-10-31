@@ -118,3 +118,10 @@
 };
 #endif
 
+&mt {
+    require-prior-idle-ms = <120>;
+};
+
+&lt {
+    require-prior-idle-ms = <120>;
+};
