@@ -40,10 +40,10 @@
         layer_0 {
             bindings = <
 &none  &none             &none  &none  &none      &none                                  &none      &none  &none      &none    &none                 &none
-&none  &kp Q             &kp W  &kp E  &kp R      &kp T                                  &kp Y      &kp U  &kp I      &lt 4 O    &kp P                 &none
+&none  &kp Q             &kp W  &kp E  &kp R      &kp T                                  &kp Y      &kp U  &kp I      &lt 4 O  &kp P                 &none
 &none  &mt LCTRL A       &kp S  &kp D  &kp F      &kp G      &none      &none            &kp H      &kp J  &lt 1 K    &kp L    &mt RCTRL SEMICOLON   &none
 &none  &mt LEFT_SHIFT Z  &kp X  &kp C  &kp V      &kp B      &none      &kp RET          &kp N      &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT FSLH  &none
-&none  &kp LALT          &none  &none  &mkp MCLK  &kp SPACE  &lt 2 TAB  &lt 3 BACKSPACE  &kp ENTER  &none  &none      &none    &none                 &none
+&none  &kp LALT          &none  &none  &mkp MCLK  &lt 2 SPACE  &lt 2 TAB  &lt 3 BACKSPACE  &kp ENTER  &none  &none      &none    &none                 &none
 #if defined(TORABO_TSUKI_LP_KSCAN_4_DIRECTION_SWITCH)
 &msc SCRL_UP &msc SCRL_DOWN &msc SCRL_LEFT &msc SCRL_RIGHT &mkp MCLK
 #elif defined(TORABO_TSUKI_LP_INPUT_HIRES_DIAL)
@@ -70,7 +70,7 @@
         layer_2 {
             bindings = <
 &trans  &trans  &trans    &trans    &trans     &trans                  &trans     &trans  &trans  &trans  &trans        &trans
-&trans  &none   &none     &kp UP    &none      &none                   &none      &kp N7  &kp N8  &kp N9  &kp LS(N0)    &trans
+&trans  &none   &none     &kp UP    &none      &none                   &none      &kp N7  &kp N8  &kp N9  &kp EQUAL    &trans
 &trans  &none   &kp LEFT  &kp DOWN  &kp RIGHT  &none   &trans  &trans  &kp LBKT   &kp N4  &kp N5  &kp N6  &kp COLON     &trans
 &trans  &none   &none     &none     &none      &none   &trans  &trans  &kp MINUS  &kp N1  &kp N2  &kp N3  &kp LS(INT1)  &trans
 &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans     &kp N0  &trans  &trans  &trans        &trans
@@ -84,11 +84,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans   &trans   &trans        &trans        &trans                      &trans            &trans     &trans         &trans     &trans      &trans
-&trans  &kp F1   &kp F2   &kp F3        &kp F4        &kp F5                      &kp HOME          &kp PG_UP  &kp PAGE_DOWN  &kp END    &kp ESCAPE  &trans
-&trans  &kp F6   &kp F7   &kp F8        &kp F9        &kp F10     &trans  &trans  &kp LEFT          &kp DOWN   &kp UP_ARROW   &kp RIGHT  &kp TAB     &trans
-&trans  &kp F11  &kp F12  &out OUT_USB  &out OUT_BLE  &bt BT_NXT  &trans  &trans  &kp SINGLE_QUOTE  &kp DQT    &kp GRAVE      &kp TILDE  &kp PIPE    &trans
-&trans  &trans   &trans   &trans        &kp DELETE    &kp TAB     &trans  &trans  &trans            &trans     &trans         &trans     &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp RBKT  &kp NUHS  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 #if defined(TORABO_TSUKI_LP_KSCAN_4_DIRECTION_SWITCH)
 &msc SCRL_UP &msc SCRL_DOWN &msc SCRL_LEFT &msc SCRL_RIGHT &mkp MCLK
 #elif defined(TORABO_TSUKI_LP_INPUT_HIRES_DIAL)
