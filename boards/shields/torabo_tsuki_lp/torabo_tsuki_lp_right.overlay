@@ -27,3 +27,13 @@
 &size_l_transform {
     col-offset = <7>;
 };
+
+&zip_temp_layer {
+    excluded-positions = <
+        18 // Y
+        28 // I
+        32 // H
+        33 // J
+        34 // K
+    >;
+};
