@@ -36,7 +36,7 @@ include:
     snippet: >-
       studio-rpc-usb-uart split-central dynamic-settings
       hardware-trackball input-path-trackball-local-right settings-trackball-right
-    input-path-hires-dial-receive-from-left settings-hires-dial-left
+      input-path-hires-dial-receive-from-left settings-hires-dial-left
     # input-path-trackpad-mini-receive-from-left settings-trackpad-mini-left
     cmake-args: >-
       -DCONFIG_ZMK_NEMU_LINK_PERIPHERAL_ID=1
