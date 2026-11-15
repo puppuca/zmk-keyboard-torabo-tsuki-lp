@@ -7,7 +7,7 @@ include:
     shield: torabo_tsuki_lp_left
     snippet: >-
       studio-rpc-usb-uart
-    #  hardware-hires-dial input-path-hires-dial-send-from-left
+      hardware-hires-dial input-path-hires-dial-send-from-left
     #  hardware-trackpad-mini input-path-trackpad-mini-send-from-left
     #  hardware-nemu-link-mic input-path-nemu-link-mic-send-from-left settings-nemu-link-mic-left
     cmake-args: >-
