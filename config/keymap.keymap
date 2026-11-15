@@ -10,6 +10,31 @@
 #endif
 
 / {
+    combos {
+            compatible = "zmk,combos";
+    
+            combo_lang1 {              // J + K → LANG1
+                bindings = <&kp LANG1>;
+                key-positions = <33 34>;
+                timeout-ms = <40>;
+                layers = <0>;
+            };
+    
+            combo_lang2 {              // D + F → LANG2
+                bindings = <&kp LANG2>;
+                key-positions = <27 28>;
+                timeout-ms = <40>;
+                layers = <0>;
+            };
+    
+            combo_esc {                // Q + W → ESC
+                bindings = <&kp ESC>;
+                key-positions = <13 14>;
+                timeout-ms = <40>;
+                layers = <0>;
+            };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
