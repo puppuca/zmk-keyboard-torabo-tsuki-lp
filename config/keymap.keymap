@@ -13,24 +13,21 @@
     combos {
             compatible = "zmk,combos";
     
-            combo_lang1 {              // J + K → LANG1
+            combo_lang1 { 
                 bindings = <&kp LANG1>;
                 key-positions = <33 34>;
-                timeout-ms = <40>;
                 layers = <0>;
             };
     
-            combo_lang2 {              // D + F → LANG2
+            combo_lang2 {
                 bindings = <&kp LANG2>;
                 key-positions = <27 28>;
-                timeout-ms = <40>;
                 layers = <0>;
             };
     
-            combo_esc {                // Q + W → ESC
+            combo_esc {
                 bindings = <&kp ESC>;
                 key-positions = <13 14>;
-                timeout-ms = <40>;
                 layers = <0>;
             };
     };
@@ -73,7 +70,7 @@
 &trans  &trans            &trans            &trans      &trans      &trans                      &trans          &trans         &trans            &trans             &trans         &trans
 &trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                  &kp LS(N6)      &kp LS(N7)     &kp LS(N8)        &kp LS(N9)         &kp LS(N0)     &trans
 &trans  &kp N1            &kp N2            &kp N3      &kp N4      &kp N5      &trans  &trans  &kp LEFT_BRACE  &kp MINUS      &kp EQUAL         &kp RIGHT_BRACE    &kp COLON      &trans
-&trans  &kp N6            &kp N7            &kp N8      &kp N9      &kp N0      &trans  &trans  &kp LS(MINUS)   &kp LS(EQUAL)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
+&trans  &kp N6            &kp N7            &kp N8      &kp N9      &kp N0      &trans  &trans  &kp LS(MINUS)   &kp LS(EQUAL)  &kp LEFT_BRACKET  &kp LS(INT3)   &kp BACKSLASH  &trans
 &trans  &trans            &trans            &trans      &trans      &trans      &trans  &trans  &kp TAB         &kp DEL        &trans            &trans             &trans         &trans
 #if defined(TORABO_TSUKI_LP_KSCAN_4_DIRECTION_SWITCH)
 &msc SCRL_UP &msc SCRL_DOWN &msc SCRL_LEFT &msc SCRL_RIGHT &mkp MCLK
