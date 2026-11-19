@@ -1,2 +1,3 @@
 name: input-path-hires-dial-send-from-right
-append: {}
+append:
+  DTS_EXTRA_CPPFLAGS: -DTORABO_TSUKI_LP_INPUT_HIRES_DIAL

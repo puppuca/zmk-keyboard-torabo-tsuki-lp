@@ -7,7 +7,7 @@ include:
     shield: torabo_tsuki_lp_left
     snippet: >-
       studio-rpc-usb-uart
-    #  hardware-hires-dial input-path-hires-dial-send-from-left
+      hardware-hires-dial input-path-hires-dial-send-from-left
     #  hardware-trackpad-mini input-path-trackpad-mini-send-from-left
     #  hardware-nemu-link-mic input-path-nemu-link-mic-send-from-left settings-nemu-link-mic-left
     cmake-args: >-
@@ -20,7 +20,7 @@ include:
     snippet: >-
       studio-rpc-usb-uart split-central dynamic-settings
       hardware-trackball input-path-trackball-local-right settings-trackball-right settings-paw3222-right
-    # input-path-hires-dial-receive-from-left settings-hires-dial-left
+      input-path-hires-dial-receive-from-left settings-hires-dial-left
     # input-path-trackpad-mini-receive-from-left settings-trackpad-mini-left
     cmake-args: >-
       -DCONFIG_ZMK_NEMU_LINK_PERIPHERAL_ID=1
@@ -32,7 +32,7 @@ include:
     snippet: >-
       studio-rpc-usb-uart dynamic-settings
       input-path-trackball-receive-from-right settings-trackball-right
-    # input-path-hires-dial-receive-from-left settings-hires-dial-left
+      input-path-hires-dial-receive-from-left settings-hires-dial-left
     # input-path-trackpad-mini-receive-from-left settings-trackpad-mini-left
     # input-path-nemu-link-mic-receive-from-left settings-nemu-link-mic-left
     artifact-name: torabo_tsuki_lp_nemu_link_dongle_right_trackball
