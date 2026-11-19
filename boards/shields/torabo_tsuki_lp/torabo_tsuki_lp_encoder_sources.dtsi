@@ -11,7 +11,11 @@
         source-name = "pointer-x";
         label = "Pointer X";
         sensor = <&pointer_encoder_sensor_x>;
+#if defined(TORABO_TSUKI_LP_INPUT_HIRES_DIAL)
+        sensor-index = <1>;
+#else
         sensor-index = <0>;
+#endif
         input-mode = "tick";
         target-role = "keyboard-left";
     };
@@ -21,7 +25,11 @@
         source-name = "pointer-y";
         label = "Pointer Y";
         sensor = <&pointer_encoder_sensor_y>;
+#if defined(TORABO_TSUKI_LP_INPUT_HIRES_DIAL)
+        sensor-index = <2>;
+#else
         sensor-index = <1>;
+#endif
         input-mode = "tick";
         target-role = "keyboard-left";
     };
@@ -31,7 +39,7 @@
         source-name = "hires-dial";
         label = "HIRES Dial";
         sensor = <&dynamic_hires_dial_sensor>;
-        sensor-index = <2>;
+        sensor-index = <0>;
         input-unit = "microdegree";
 #if defined(TORABO_TSUKI_LP_HIRES_DIAL_RIGHT)
         target-role = "keyboard-right";

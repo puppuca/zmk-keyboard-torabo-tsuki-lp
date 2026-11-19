@@ -81,19 +81,19 @@
 };
 
 &{/keymap/layer_0} {
-    sensor-bindings = <&none &none &hires_dial_scroll 1 1>;
+    sensor-bindings = <&hires_dial_scroll 1 1 &none &none>;
 };
 
 &{/keymap/layer_1} {
-    sensor-bindings = <&none &none &hires_dial_scroll 10 1>;
+    sensor-bindings = <&hires_dial_scroll 10 1 &none &none>;
 };
 
 &{/keymap/layer_2} {
-    sensor-bindings = <&none &none &hires_dial_encoder C_VOL_UP C_VOL_DN>;
+    sensor-bindings = <&hires_dial_encoder C_VOL_UP C_VOL_DN &none &none>;
 };
 
 &{/keymap/layer_3} {
     /* Quarter-speed Radial Controller motion: output/input = 1/4. */
-    sensor-bindings = <&none &none &hires_dial_radial_controller 4 1>;
+    sensor-bindings = <&hires_dial_radial_controller 4 1 &none &none>;
 };
 #endif
