@@ -72,6 +72,36 @@
 #endif
             >;
         };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans     &trans     &trans                  &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans                  &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
+#if defined(TORABO_TSUKI_LP_KSCAN_4_DIRECTION_SWITCH)
+&msc SCRL_UP &msc SCRL_DOWN &msc SCRL_LEFT &msc SCRL_RIGHT &mkp MCLK
+#elif defined(TORABO_TSUKI_LP_INPUT_HIRES_DIAL)
+&mkp MCLK
+#endif
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans     &trans     &trans                  &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans                  &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
+#if defined(TORABO_TSUKI_LP_KSCAN_4_DIRECTION_SWITCH)
+&msc SCRL_UP &msc SCRL_DOWN &msc SCRL_LEFT &msc SCRL_RIGHT &mkp MCLK
+#elif defined(TORABO_TSUKI_LP_INPUT_HIRES_DIAL)
+&mkp MCLK
+#endif
+            >;
+        };
     };
 };
 
@@ -95,5 +125,13 @@
 &{/keymap/layer_3} {
     /* Quarter-speed Radial Controller motion: output/input = 1/4. */
     sensor-bindings = <&hires_dial_radial_controller 4 1 &none &none>;
+};
+
+&{/keymap/layer_4} {
+    sensor-bindings = <&none &none &none>;
+};
+
+&{/keymap/layer_5} {
+    sensor-bindings = <&none &none &none>;
 };
 #endif
