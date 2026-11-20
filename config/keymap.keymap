@@ -20,6 +20,66 @@
         };
     };
 
+    runtime_tap_dance0: runtime_tap_dance0 {
+        compatible = "sekigon,dynamic-behavior-tap-dance";
+        #binding-cells = <0>;
+        slot-index = <0>;
+    };
+
+    runtime_tap_dance1: runtime_tap_dance1 {
+        compatible = "sekigon,dynamic-behavior-tap-dance";
+        #binding-cells = <0>;
+        slot-index = <1>;
+    };
+
+    runtime_tap_dance2: runtime_tap_dance2 {
+        compatible = "sekigon,dynamic-behavior-tap-dance";
+        #binding-cells = <0>;
+        slot-index = <2>;
+    };
+
+    runtime_tap_dance3: runtime_tap_dance3 {
+        compatible = "sekigon,dynamic-behavior-tap-dance";
+        #binding-cells = <0>;
+        slot-index = <3>;
+    };
+
+    runtime_tap_dance4: runtime_tap_dance4 {
+        compatible = "sekigon,dynamic-behavior-tap-dance";
+        #binding-cells = <0>;
+        slot-index = <4>;
+    };
+
+    runtime_tap_dance5: runtime_tap_dance5 {
+        compatible = "sekigon,dynamic-behavior-tap-dance";
+        #binding-cells = <0>;
+        slot-index = <5>;
+    };
+
+    runtime_tap_dance6: runtime_tap_dance6 {
+        compatible = "sekigon,dynamic-behavior-tap-dance";
+        #binding-cells = <0>;
+        slot-index = <6>;
+    };
+
+    runtime_tap_dance7: runtime_tap_dance7 {
+        compatible = "sekigon,dynamic-behavior-tap-dance";
+        #binding-cells = <0>;
+        slot-index = <7>;
+    };
+
+    runtime_tap_dance8: runtime_tap_dance8 {
+        compatible = "sekigon,dynamic-behavior-tap-dance";
+        #binding-cells = <0>;
+        slot-index = <8>;
+    };
+
+    runtime_tap_dance9: runtime_tap_dance9 {
+        compatible = "sekigon,dynamic-behavior-tap-dance";
+        #binding-cells = <0>;
+        slot-index = <9>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
