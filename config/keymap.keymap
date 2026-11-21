@@ -24,14 +24,12 @@
         compatible = "sekigon,dynamic-behavior-tap-dance";
         #binding-cells = <0>;
         slot-index = <0>;
-        default-double-tap = <&kp LANGUAGE_1>;
     };
 
     runtime_tap_dance1: runtime_tap_dance1 {
         compatible = "sekigon,dynamic-behavior-tap-dance";
         #binding-cells = <0>;
         slot-index = <1>;
-        default-double-tap = <&kp LANGUAGE_2>;
     };
 
     runtime_tap_dance2: runtime_tap_dance2 {
