@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: MIT
+
+description: Tap-first mod-tap behavior. The tap binding is pressed immediately on key down; if the key is still held when the tapping term expires, the tap binding is released and the hold binding is pressed instead.
+
+compatible: "zmk,behavior-mt-fast"
+
+include: two_param.yaml
+
+properties:
+  bindings:
+    type: phandles
+    required: true
+  tapping-term-ms:
+    type: int
+    required: true
